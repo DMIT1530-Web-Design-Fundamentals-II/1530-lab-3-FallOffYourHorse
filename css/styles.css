@@ -1,5 +1,9 @@
 /* NOTE: Make sure that when you complete your Lab, you leave a comment at the top of this file listing which new properties you used! */
 
+/* 
+I added a transform: scale to my button with a transition to ease an animation of the button getting bigger and smaller as the mouse hovers over it 
+*/
+
 :root {
   --dk-grey: #263238;
   --hot-pink: #EC407A;
@@ -43,6 +47,10 @@ span {
   color: var(--hot-pink);
 }
 
+.dropdown {
+  line-height: 2;
+}
+
 .modal-popup {
   text-align: center;
 }
@@ -58,7 +66,7 @@ header {
   margin-bottom: 1rem;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 2;
 }
 
 .toggle-btn {
@@ -66,7 +74,7 @@ header {
   cursor: pointer;
 }
 
-.main-menu li a {
+.main-menu li a, a{
   display: flex;
   flex-direction: row;
   text-decoration: none;
@@ -81,11 +89,22 @@ header {
 
 /* main */
 body {
-  background: url(../img/crowd-background.webp) center / cover no-repeat;
+  background: url(../img/crowd-background.webp) top / cover no-repeat;
+  overflow: hidden;
 }
 
 h2 {
   padding-bottom: 1rem;
+}
+
+.main-menu li ul.dropdown {
+  background-color: var(--dk-grey);
+  padding: 1rem;
+}
+
+.dropdown {
+  padding-top: 1rem;
+  background-color: var(--dk-grey);
 }
 
 .modal-popup {
@@ -111,6 +130,7 @@ h2 {
     border: none;
 }
 
+
 /* hidden menu indictors for mobile view */
 nav {
   width: 100%;
@@ -124,7 +144,6 @@ nav {
 .show-nav {
   max-height: unset;
   overflow: visible;
-  border-bottom: 1px solid #fff;
 }
 
 nav li {
@@ -137,6 +156,12 @@ nav li a {
 
 nav li a{
   text-transform: uppercase;
+}
+
+/* Animation */
+.modal-popup button:hover {
+  transform: scale(1.25);
+  transition: .5s ease-in-out;
 }
 
 /* Media Queries */
