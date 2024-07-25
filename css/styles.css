@@ -59,6 +59,10 @@ span {
   font-size: 1.3rem;
 }
 
+.modal-popup button {
+  font-weight: 700;
+}
+
 /* header & nav */
 header {
   background-color: var(--dk-grey);
