@@ -45,9 +45,17 @@ header {
   cursor: pointer;
 }
 
+.main-menu li a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
 
-svg {
-  max-width: 2rem;
+.icon {
+  max-width: 3rem;
+  max-height: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* main */
@@ -115,7 +123,7 @@ nav li a{
 
   .main-menu {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     margin: 0;
   }
 
