@@ -27,13 +27,22 @@ header .inner-container {
 }
 
 /* Typography */
+body {
+  font-family: "Nunito", sans-serif;
+}
 
+span {
+  color: var(--hot-pink);
+}
+
+.modal-popup {
+  text-align: center;
+}
 
 /* header & nav */
 header {
   background-color: var(--dk-grey);
   padding: 1rem;
-  border-bottom: 1px solid #fff;
   margin-bottom: 1rem;
   position: sticky;
   top: 0;
@@ -59,8 +68,37 @@ header {
 }
 
 /* main */
-main {
-  background: url(../img/crowd-background.webp) center / cover;
+body {
+  background: url(../img/crowd-background.webp) center / cover no-repeat;
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.modal-popup {
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, 50%);
+  padding: 6rem 2rem;
+  margin: 10rem 6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-popup p {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+.modal-popup button {
+    background-image: linear-gradient(to right, #DD2476  0%, #FF512F 51%, #FF512F  100%);
+    padding: 15px 45px;
+    text-align: center;
+    color: white;            
+    border-radius: 50px;
+    border: none;
 }
 
 /* hidden menu indictors for mobile view */
